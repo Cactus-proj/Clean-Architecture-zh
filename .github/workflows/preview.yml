@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
-      - name: Install and Build   
+      - name: Install and Build
         env: 
           BASE_URL: "/Clean-Architecture-zh/pr-preview/pr-${{ github.event.pull_request.number }}/"
         run: |
