@@ -1,6 +1,14 @@
 {
+  "devDependencies": {
+    "markdownlint": "^0.39.0",
+    "markdownlint-cli": "^0.46.0",
+    "vitepress": "^2.0.0-alpha.15"
+  },
   "scripts": {
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "docs:dev": "vitepress dev docs --open --host 127.0.0.1",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs",
+    "md:lint": "markdownlint \"**/*.md\" --ignore node_modules",
+    "md:fix": "markdownlint --fix \"**/*.md\" --ignore node_modules"
   }
 }
