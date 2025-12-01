@@ -1,6 +1,6 @@
 # Chap1. WHAT IS DESIGN AND ARCHITECTURE? 设计与架构到底是什么
 
-![](./un/CH-UN01.jpg)
+![](./figures/un/CH-UN01.jpg)
 
 There has been a lot of confusion about design and architecture over the years. What is design? What is architecture? What are the differences between the two?
 

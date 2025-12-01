@@ -1,6 +1,6 @@
 # Chap6. FUNCTIONAL PROGRAMMING 函数式编程
 
-![](./un/CH-UN06.jpg)
+![](./figures/un/CH-UN06.jpg)
 
 In many ways, the concepts of functional programming predate programming itself. This paradigm is strongly based on the l-calculus invented by Alonzo Church in the 1930s.
 

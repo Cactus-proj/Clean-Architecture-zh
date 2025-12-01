@@ -1,6 +1,6 @@
 # Chap7. SRP: THE SINGLE RESPONSIBILITY PRINCIPLE SRP：单一职责原则
 
-![](./un/CH-UN07.jpg)
+![](./figures/un/CH-UN07.jpg)
 
 Of all the SOLID principles, the Single Responsibility Principle (SRP) might be the least well understood. That’s likely because it has a particularly inappropriate name. It is too easy for programmers to hear the name and then assume that it means that every module should do just one thing.
 

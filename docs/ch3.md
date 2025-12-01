@@ -1,6 +1,6 @@
 # Chap3. PARADIGM OVERVIEW 编程范式总览
 
-![](./un/CH-UN03.jpg)
+![](./figures/un/CH-UN03.jpg)
 
 The three paradigms included in this overview chapter are structured programming, object-orient programming, and functional programming.
 
