@@ -1,0 +1,10 @@
+{
+    "no-multiple-blanks": {
+        "maximum": 2  
+    },
+    "blanks-around-headings": {
+        "lines_below": 0
+    },
+    "blanks-around-fences": false,
+    "blanks-around-lists": false
+}
