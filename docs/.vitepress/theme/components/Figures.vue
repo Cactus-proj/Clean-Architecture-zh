@@ -15,6 +15,12 @@
 </template>
 
 <script>
+const figureImages = import.meta.glob("../../../figures/ch*/fg*.jpg", {
+  eager: true,
+  query: "?url",
+  import: "default"
+});
+
 export default {
   props: ["figure", "type"],
   data() {
@@ -28,7 +34,15 @@ export default {
   methods: {
     locateResources() {
       let tmp = this.figure.split("-");
-      this.pngSrc = "./figures/ch" + tmp[0] + "/fg" + this.figure + ".jpg";
+      const imagePath =
+        "../../../figures/ch" + tmp[0] + "/fg" + this.figure + ".jpg";
+      const imageUrl = figureImages[imagePath];
+
+      if (!imageUrl) {
+        throw new Error("找不到插图资源：" + imagePath);
+      }
+
+      this.pngSrc = imageUrl;
     }
   }
 };
