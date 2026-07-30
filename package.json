@@ -8,6 +8,8 @@
     "docs:dev": "vitepress dev docs --open --host 127.0.0.1",
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs",
+    "test:built-images": "node scripts/check-built-images.mjs",
+    "test": "npm run docs:build && npm run test:built-images",
     "md:lint": "markdownlint \"**/*.md\" --ignore node_modules",
     "md:fix": "markdownlint --fix \"**/*.md\" --ignore node_modules"
   }
