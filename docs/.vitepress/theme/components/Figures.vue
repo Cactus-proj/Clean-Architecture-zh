@@ -15,6 +15,8 @@
 </template>
 
 <script>
+import { withBase } from "vitepress";
+
 export default {
   props: ["figure", "type"],
   data() {
@@ -28,7 +30,7 @@ export default {
   methods: {
     locateResources() {
       let tmp = this.figure.split("-");
-      this.pngSrc = "./figures/ch" + tmp[0] + "/fg" + this.figure + ".jpg";
+      this.pngSrc = withBase("/figures/ch" + tmp[0] + "/fg" + this.figure + ".jpg");
     }
   }
 };

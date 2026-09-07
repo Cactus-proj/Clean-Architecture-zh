@@ -23,6 +23,7 @@ jobs:
           npm install
           npm run docs:build -- --base $BASE_URL
       - name: Deploy preview
+        if: github.event.pull_request.head.repo.full_name == github.repository
         uses: rossjrw/pr-preview-action@v1
         with:
           source-dir: docs/.vitepress/dist
