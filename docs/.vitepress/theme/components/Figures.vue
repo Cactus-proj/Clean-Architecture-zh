@@ -15,6 +15,12 @@
 </template>
 
 <script>
+const figureImages = import.meta.glob("../../../figures/ch*/*.jpg", {
+  eager: true,
+  import: "default",
+  query: "?url"
+});
+
 export default {
   props: ["figure", "type"],
   data() {
@@ -28,7 +34,10 @@ export default {
   methods: {
     locateResources() {
       let tmp = this.figure.split("-");
-      this.pngSrc = "./figures/ch" + tmp[0] + "/fg" + this.figure + ".jpg";
+      this.pngSrc =
+        figureImages[
+          "../../../figures/ch" + tmp[0] + "/fg" + this.figure + ".jpg"
+        ];
     }
   }
 };
