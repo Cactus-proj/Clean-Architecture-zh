@@ -15,7 +15,11 @@
 </template>
 
 <script>
-import { withBase } from "vitepress";
+const figureImages = import.meta.glob("../../../figures/ch*/*.jpg", {
+  eager: true,
+  import: "default",
+  query: "?url"
+});
 
 export default {
   props: ["figure", "type"],
@@ -30,7 +34,10 @@ export default {
   methods: {
     locateResources() {
       let tmp = this.figure.split("-");
-      this.pngSrc = withBase("/figures/ch" + tmp[0] + "/fg" + this.figure + ".jpg");
+      this.pngSrc =
+        figureImages[
+          "../../../figures/ch" + tmp[0] + "/fg" + this.figure + ".jpg"
+        ];
     }
   }
 };
