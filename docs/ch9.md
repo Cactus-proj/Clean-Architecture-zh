@@ -36,7 +36,7 @@ The canonical example of a violation of the LSP is the famed (or infamous, depen
 
 In this example, Square is not a proper subtype of Rectangle because the height and width of the Rectangle are independently mutable; in contrast, the height and width of the Square must change together. Since the User believes it is communicating with a Rectangle, it could easily get confused. The following code shows why:
 
-> 在这个案例中，Square 类并不是 Rectangle 类的子类型，因为 Rectangle 类的高和宽可以分别修改，而 Square 类的高和宽则必须一同修改。由于 User 类 始终认为自己在操作 Rectangle 类，因此会带来一些混淆。例如在下面的代码中：
+> 在这个案例中，Square 类并不是 Rectangle 类的子类型，因为 Rectangle 类的高和宽可以分别修改，而 Square 类的高和宽则必须一同修改。由于 User 类始终认为自己在操作 Rectangle 类，因此会带来一些混淆。例如，下面的代码就能说明这一点：
 
 ```java
 Rectangle r = …

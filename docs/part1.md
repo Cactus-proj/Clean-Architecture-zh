@@ -2,7 +2,7 @@
 
 It doesn’t take a huge amount of knowledge and skill to get a program working. Kids in high school do it all the time. Young men and women in college start billion-dollar businesses based on scrabbling together a few lines of PHP or Ruby. Hoards of junior programmers in cube farms around the world slog through massive requirements documents held in huge issue tracking systems to get their systems to “work” by the sheer brute force of will. The code they produce may not be pretty; but it works. It works because getting something to work—once—just isn’t that hard.
 
-> 编写并调试一段代码直到成功运行并不需要特别高深的知识和技能，现在的一名普通高中生都可以做到。有的大学生甚至通过拼凑一些 PHP 或 Ruby 代码就可以 创办一个市值 10 亿美元的公司。想象一下，世界上有成群的初级程序员挤在大公司的隔板间里，日复一日地用蛮力将记录在大型问题跟踪系统里的巨型需求文档一点点转化为能实际运行的代码。他们写出的代码可能不够优美，但是确实能够正常工作。因为创造一个能正常运行的系统——哪怕只成功运行一次——还真不是一件特别困难的事。
+> 编写并调试一段代码直到它成功运行，并不需要特别高深的知识和技能；现在的普通高中生都能做到。有些大学生甚至能靠拼凑 PHP 或 Ruby 代码创办一家市值 10 亿美元的公司。想象一下，世界各地的大公司里，成群的初级程序员挤在隔板间，日复一日地用蛮力把大型问题跟踪系统里的巨型需求文档转化为可运行的代码。他们写出的代码或许不够优美，但确实能够工作。毕竟，创造一个能正常运行的系统——哪怕只成功运行一次——并不算特别困难。
 
 Getting it right is another matter entirely. Getting software right is hard. It takes knowledge and skills that most young programmers haven’t yet acquired. It requires thought and insight that most programmers don’t take the time to develop. It requires a level of discipline and dedication that most programmers never dreamed they’d need. Mostly, it takes a passion for the craft and the desire to be a professional.
 

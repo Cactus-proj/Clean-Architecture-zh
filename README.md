@@ -24,7 +24,7 @@
   - [第 10 章 ISP：接口隔离原则](docs/ch10.md)
   - [第 11 章 DIP：依赖反转原则](docs/ch11.md)
 - [第四部分 组件构建原则](docs/part4.md)
-  - [第 12 章 组件](docs/c12.md)
+  - [第 12 章 组件](docs/ch12.md)
   - [第 13 章 组件聚合](docs/ch13.md)
   - [第 14 章 组件耦合](docs/ch14.md)
 - [第五部分 软件架构](docs/part5.md)

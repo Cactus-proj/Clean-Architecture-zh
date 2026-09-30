@@ -26,7 +26,7 @@ Let’s examine each of these concepts in turn.
 
 The reason encapsulation is cited as part of the definition of OO is that OO languages provide easy and effective encapsulation of data and function. As a result, a line can be drawn around a cohesive set of data and functions. Outside of that line, the data is hidden and only some of the functions are known. We see this concept in action as the private data members and the public member functions of a class.
 
-> 导致封装这个概念经常被引用为面向对象编程定义的一部分。通过釆用封装特性，我们可以把一组相关联的数据和函数圈起来，便圈外血的代码只能看见部分函数，数据则完全不可见。譬如在实际应用中，类（class）中的公共函数和私有成员变量就是这样。
+> 封装之所以经常被列为面向对象编程定义的一部分，是因为面向对象语言能够方便、有效地封装数据和函数。这样，我们就能把一组紧密相关的数据和函数圈在一起：圈外的代码看不到数据，只能使用其中一部分函数。例如，类中的私有数据成员和公有成员函数就体现了这一点。
 
 This idea is certainly not unique to OO. Indeed, we had perfect encapsulation in C. Consider this simple C program:
 
@@ -71,7 +71,7 @@ The users of point.h have no access whatsoever to the members of struct Point. T
 
 This is perfect encapsulation—in a non-OO language. C programmers used to do this kind of thing all the time. We would forward declare data structures and functions in header files, and then implement them in implementation files. Our users never had access to the elements in those implementation files.
 
-> 这正是完美封装 虽然 C 语言是非面向对象的编程语言。上述 C 程序是很常见的。在头文件中进行数据结构以及函数定义的前置声明（forward declare），然后 在程序文件中具体实现。程序文件中的具体实现细节对使用者来说是不可见的。
+> 这正是完美封装，尽管 C 语言并非面向对象语言。上述 C 程序十分常见：在头文件中前置声明（forward declare）数据结构和函数，再在程序文件中具体实现。程序文件中的实现细节对使用者不可见。
 
 But then came OO in the form of C++—and the perfect encapsulation of C was broken.
 
@@ -79,7 +79,7 @@ But then came OO in the form of C++—and the perfect encapsulation of C was bro
 
 The C++ compiler, for technical reasons,1 needed the member variables of a class to be declared in the header file of that class. So our Point program changed to look like this:
 
-> 由于一些技术原，C++编译器要求类的成员变量必须在该类的头文件中声明。这样一来，我们的 point.h 程序随之就改成了这样：
+> 由于一些技术原因，C++ 编译器要求类的成员变量必须在该类的头文件中声明。这样一来，point.h 就要改成下面这样：
 
 point.h
 
@@ -247,11 +247,11 @@ void copy() {
 
 The function getchar() reads from STDIN. But which device is STDIN? The putchar() function writes to STDOUT. But which device is that? These functions are polymorphic—their behavior depends on the type of STDIN and STDOUT.
 
-> 在上述程序中，函数 `getchar()` 主要负责从 STDTN 中读取数据。但是 STDLLN 究竟指代的是哪个设备呢？同样的道理，`putchar()` 主要负责将数据写入 STDOUT，而 STDOUT 又指代的是哪个设备呢？很显然，这类函数其实就具有多态性，因为它们的行为依赖于 STDIN 和 STDOUT 的具体类型。
+> 在上述程序中，`getchar()` 从 STDIN 读取数据。但 STDIN 究竟指代哪个设备呢？同样，`putchar()` 将数据写入 STDOUT，而 STDOUT 又指代哪个设备？很显然，这些函数具有多态性，因为它们的行为取决于 STDIN 和 STDOUT 的类型。
 
 It’s as though STDIN and STDOUT are Java-style interfaces that have implementations for each device. Of course, there are no interfaces in the example C program—so how does the call to getchar() actually get delivered to the device driver that reads the character?
 
-> 这里的 STDIN 和 STDOUT 与 Java 中的接口类似，各种设备都有各自的实现。当然，这个 C 程序中是没有接口这个概念的，那么 `getchar()` 这个调用的动作是 如何真正传递到设备驱动程序中，从而读取到具体内容的呢？
+> STDIN 和 STDOUT 就像 Java 接口一样，各种设备都有自己的实现。当然，示例 C 程序中并没有接口，那么 `getchar()` 调用实际上是如何传递给读取字符的设备驱动程序的呢？
 
 The answer to that question is pretty straightforward. The UNIX operating system requires that every IO device driver provide five standard functions:5 open, close, read, write, and seek. The signatures of those functions must be identical for every IO driver.
 
@@ -301,7 +301,7 @@ int getchar() {
 
 In other words, getchar() simply calls the function pointed to by the read pointer of the FILE data structure pointed to by STDIN.
 
-> 换句话说，`getchar()` 只是调用了 STDIN 所指向的 FIL E 数据结构体中的 read 函数指针指向的函数。
+> 换句话说，`getchar()` 只是调用 STDIN 所指向的 `FILE` 数据结构中的 `read` 函数指针。
 
 This simple trick is the basis for all polymorphism in OO. In C++, for example, every virtual function within a class has a pointer in a table called a vtable, and all calls to virtual functions go through that table. Constructors of derivatives simply load their versions of those functions into the vtable of the object being created.
 

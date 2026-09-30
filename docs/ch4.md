@@ -12,11 +12,11 @@ In 1955, having been a programmer for three years, and while still a student, Di
 
 In 1957, Dijkstra married Maria Debets. At the time, you had to state your profession as part of the marriage rites in the Netherlands. The Dutch authorities were unwilling to accept “programmer” as Dijkstra’s profession; they had never heard of such a profession. To satisfy them, Dijkstra settled for “theoretical physicist” as his job title.
 
-> 1957 年，Dijkstra 与 Maria Debets 结婚了。在当时的荷兰，新郎新娘必须在结婚仪式上公布自己的职业。而当时的荷兰官方政府拒绝承认“程序员”这一职业，因为他们从来没有听说过。最终 Dijkstra 不得不继续使用"理论物理学家这一职位名称。
+> 1957 年，Dijkstra 与 Maria Debets 结婚了。当时在荷兰举行婚礼时必须申报职业。荷兰当局不愿接受“程序员”作为 Dijkstra 的职业，因为他们从未听说过这个职业。最后，Dijkstra 只好将自己的职业写作“理论物理学家”。
 
 As part of deciding to make programming his career, Dijkstra conferred with his boss, Adriaan van Wijngaarden. Dijkstra was concerned that no one had identified a discipline, or science, of programming, and that he would therefore not be taken seriously. His boss replied that Dijkstra might very well be one of the people who would discover such disciplines, thereby evolving software into a science.
 
-> Dijkstra 和他的老板 Adriaan van Wijingaarden 曾经讨论过将“程序员”当作终身职业这件事，Dijkstra 最担心的是由于没有人认真地对待过编程这件事或者将它当作是一门学术学科对待，他的科研成果可能将不会得到认真对待。而 Adriaan 则建议 Dijkstra：为什么不亲自去开创这门学科呢?
+> Dijkstra 曾与老板 Adriaan van Wijngaarden 讨论把编程作为终身职业一事。他担心，由于没人把编程当作一门学科或科学来研究，自己可能不会受到认真对待。老板回答说，Dijkstra 完全可能成为发现这门学科的人之一，从而推动软件发展成为一门科学。
 
 Dijkstra started his career in the era of vacuum tubes, when computers were huge, fragile, slow, unreliable, and (by today’s standards) extremely limited. In those early years, programs were written in binary, or in very crude assembly language. Input took the physical form of paper tape or punched cards. The edit/compile/test loop was hours—if not days—long.
 
@@ -42,7 +42,7 @@ Of course, to get this going, Dijkstra realized that he would have to demonstrat
 
 During his investigation, Dijkstra discovered that certain uses of goto statements prevent modules from being decomposed recursively into smaller and smaller units, thereby preventing use of the divide-and-conquer approach necessary for reasonable proofs.
 
-> Dijkstra 在研究过程中发现了一个问题：goto 语句的某些用法会导致某个模块 无法被递归拆分成更小的、可证明的单元，这会导致无法采用分解法来将大型问题进一步拆分成更小的、可证明的部分。
+> Dijkstra 在研究过程中发现，goto 语句的某些用法会使模块无法递归地拆分成越来越小的单元，从而无法采用合理证明所需的分而治之方法。
 
 Other uses of goto, however, did not have this problem. Dijkstra realized that these “good” uses of goto corresponded to simple selection and iteration control structures such as if/then/else and do/while. Modules that used only those kinds of control structures could be recursively subdivided into provable units.
 
@@ -50,7 +50,7 @@ Other uses of goto, however, did not have this problem. Dijkstra realized that t
 
 Dijkstra knew that those control structures, when combined with sequential execution, were special. They had been identified two years before by Böhm and Jacopini, who proved that all programs can be constructed from just three structures: sequence, selection, and iteration.
 
-> 事实上，Dijkstra 很早就知道将这些控制结构与顺序结构的程序组合起来很有用。因为在两年前，Bohm 和 Jocopini 刚刚证明了人们可以用顺序结构、分支结构、循环结构这三种结构构造出任何程序。
+> 事实上，Dijkstra 很早就知道将这些控制结构与顺序执行结合起来很有用。两年前，Böhm 和 Jacopini 已经证明，任何程序都可以由顺序、选择和迭代这三种结构构成。
 
 This discovery was remarkable: The very control structures that made a module provable were the same minimum set of control structures from which all programs can be built. Thus structured programming was born.
 
@@ -130,7 +130,7 @@ That is the nature of scientific theories and laws: They are falsifiable but not
 
 And yet we bet our lives on these laws every day. Every time you get into a car, you bet your life that F = ma is a reliable description of the way the world works. Every time you take a step, you bet your health and safety that F = Gm1m2/r2 is correct.
 
-> 但是我们仍然每天都在依赖这些定律生活。开车的时候，我们就等于是在用性命担保 F=ma 是对世界运转方式的一个可靠的描述。每当我们迈出一步的时候，和等于在亲身证明 F=Gm1m2/r^2 是正确的。
+> 但我们每天都依赖这些定律生活。开车时，我们等于用自己的生命担保 F=ma 可靠地描述了世界的运行方式。每迈出一步，也等于亲身证明 F=Gm1m2/r^2 是正确的。
 
 Science does not work by proving statements true, but rather by proving statements false. Those statements that we cannot prove false, after much effort, we deem to be true enough for our purposes.
 

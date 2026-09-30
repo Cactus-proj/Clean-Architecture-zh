@@ -6,7 +6,7 @@ My professional career as a software developer began in the 1990s, at a time whe
 
 Projects—and boy, should we rue the day when we decided to call them that?—started with long design phases, where detailed blueprints for our systems were laid out by “senior” programmers for more “junior” programmers to follow. Which, of course, they didn’t. Ever.
 
-> 现在想起来，或许真的可以考虑把我们那段日子所做的事情叫作“童子军项目”。每个项目的开头都会有一段长长的设计阶段，以便等那些“高级”程序员为一些跟随他们的、较“低级”的程序员制订好系统的设计蓝图，当然，这些“高级”程序员似乎永远完不成这件事。
+> 项目——天哪，我们真该为当初决定这么称呼它们的那一天后悔！——一开始总要经历漫长的设计阶段。“高级”程序员会为系统制定详尽的蓝图，交给更“初级”的程序员照着执行。当然，他们从来没有照做过。
 
 And so it was that, after rising to the lofty ranks of “software architect”—and then “lead architect,” “chief architect,” “Lord Architect of the Privy Council,” and all the other highfalutin titles we gave ourselves back in the day—I seemed doomed to spend my days connecting boxes with arrows and coding with PowerPoint, and having barely any impact on the real code itself.
 
@@ -18,15 +18,15 @@ It struck me then that this was nonsense; every line of code contains at least o
 
 And then, thankfully, the Agile Software Development revolution arrived and put architects like me out of our misery. I’m a programmer. I like programming. And the best way I’ve found to have a positive impact on code is to write it.
 
-> 幸运的是，接下来发生的敏捷软件开发革命终于让我们这些架构师脱离了苦海。毕竟我是一名程序员，喜欢的是编程。而且我也发现影响软件质量最好的方法还是后序编写代码。
+> 幸运的是，敏捷软件开发革命终于让我们这些架构师脱离了苦海。我是一名程序员，也喜欢编程。我发现，对代码产生积极影响的最好办法就是亲自编写代码。
 
 The dinosaurs of Big Architecture—typically to be found wandering the primeval plains of Big Process—were wiped out by the asteroid of Extreme Programming. And it came as a blessed relief.
 
-> 这些大型架构像恐龙一样在大进程式的原始平原上游荡，然后被一颗叫作“敏捷开发”的小行星灭绝了，真是老天开眼啊！
+> 大型架构时代的恐龙——它们通常游荡在繁重流程的蛮荒平原上——被“极限编程”这颗小行星撞得灭绝了。这真是让人如释重负。
 
 Development teams were set free to focus on what matters and to concentrate their efforts on things that add value. Instead of waiting weeks or months for a Big Architecture document so they could dutifully ignore it and write the code they were going to write anyway, teams could just agree to a test with their customer, have a quick design session to get their bearings, and then write the code they were going to write anyway.
 
-> 现在！开发团队可以自由地专注于真正重要的内容，并思考如何为他们所做的事情添加更多价值了。也就是说，他们现在再也不需要浪费几周或几个月的时间等待那些大型架构的设计文档了，他们可以名正言顺地忽略这些设计，直接按照自己的想法编写代码。然后，开发团队只需要安排客户直接参与测试，并在快速设计会议上得到用户的支持，然后他们就可以继续写代码了。
+> 开发团队终于可以专注于真正重要、能够创造价值的事情。他们不必再花几周或几个月等待一份大型架构文档，然后照例把它搁在一边，继续编写原本就打算写的代码。团队只需与客户商定一个测试，通过简短的设计讨论确定方向，然后继续编写那些代码。
 
 The Big Architecture dinosaurs were gone, and small, nimble Just-Enough-Design-Up-Front-with-Plenty-of-Refactoring mammals replaced us. Software architecture became responsive.
 
@@ -46,7 +46,7 @@ Every design decision needs to leave the door open for future changes. Like play
 
 And so, the era of Big Architecture gave way to a new era of Fragile Architecture: designs that grew quickly to deliver value sooner, but that made sustaining that pace of innovation very difficult.
 
-> 因此，在大型架构时代让位给易碎型架构（Fragile Architecture）的新时代之后，虽然设计创造的价值得到了快速发展，但这也让我们想要持续创新变得举步维艰。
+> 大型架构时代让位给脆弱架构时代：新设计能更快交付价值，却让我们很难维持这样的创新速度。
 
 It’s all very well talking about “embracing change,” but if it costs \$500 to change a line of code, change ain’t happening.
 
@@ -62,7 +62,7 @@ Now you’ve seen how it’s possible to write code that delivers value today wi
 
 Like riding a bicycle, you can’t master software design just by reading about it. To get the best from a book like this, you need to get practical. Analyze your code and look for the kinds of problems Bob highlights, then practice refactoring the code to fix these problems. If you’re new to the refactoring discipline, then this will be a doubly valuable experience.
 
-> 就像学习骑自行车一样，单纯靠阅读是无法掌握软件设计方法的。为了让我们从这本书中的获益最大化，亲自实践是必不对少的。我们需要亲自分析自己的代码，查看其中是否存在 Bob 所强调的各种问题，然后在重构代码的实践中修复它们。如果你在重构方面是个新手，那么你将从本书收获双重的宝贵学习经验。
+> 就像骑自行车一样，单靠阅读无法掌握软件设计。要从这本书中获得最大收获，就必须动手实践：分析自己的代码，寻找 Bob 指出的那些问题，再通过重构解决它们。如果你刚开始学习重构，这会是一段格外有价值的经历。
 
 Learn how you can incorporate design principles and Clean Architecture into your development processes, so that new code is less likely to cause pain. For example, if you’re doing TDD, make a point of having a little design review after passing each test, and clean up as you go. (It’s way cheaper than fixing bad designs later.) Perhaps, before you commit code, ask a colleague to review it with you. And look into the possibility of adding a code “quality gate” to your build pipeline as a last line of defense against unclean architecture. (And if you don’t have a build pipeline, maybe it’s time to create one?)
 
@@ -74,11 +74,11 @@ Most important of all is to talk about Clean Architecture. Talk about it with yo
 
 Be mindful that most software developers are not very architecture-aware, just as I wasn’t 25 years ago. More experienced developers clued me into it. Once you’ve wrapped your head around Clean Architecture, take the time to wrap someone else’s head around it. Pay it forward.
 
-> 我们必须意识到，大部分的软件开发者是没有太多架构意识的。就像 25 年前的我一样，是更有经验的开发者让我了解了架构。一旦我们一头扎进了整洁架构中，就会花时间围绕着它思考问题，并玩转它。
+> 请记住，大多数软件开发者对架构并没有太多认识，25 年前的我也是如此。是经验更丰富的开发者让我了解了架构。当你理解了整洁架构，也花些时间帮助别人理解它，把你得到的帮助传递下去。
 
 While the technology landscape for developers evolves continuously, foundational principles like the ones described here rarely change. I have little doubt that this is a book that’s going to stay on your shelf for many years after your copy of Lean JSON Cloud NoSQL for Dummies has ended up in a yard sale. I hope it does for your Design Fu what Bob’s original papers did for mine.
 
-> 虽然开发者所在的技术环境一直在不断地发展，但本书所讨论的这些基本设计原则几乎不会发生变化。我一点都不怀疑在你们把 Lean JSON Cloud NoSQL for Dummies 当废纸卖掉很多年之后，这本书会还留在你们的书架上。我希望这本书会 对你们有很大的帮助，就像 Bob 那篇原创论文对我的帮助一样。
+> 开发者所处的技术环境不断变化，但本书讨论的基础原则很少改变。我相信，多年以后，即使你的《Lean JSON Cloud NoSQL for Dummies》已经在旧货集市上转手，这本书仍会留在你的书架上。我希望它能帮助你磨炼设计功夫，就像 Bob 早年的论文曾帮助我一样。
 
 The real journey starts here.
 

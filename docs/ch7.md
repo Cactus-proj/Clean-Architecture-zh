@@ -8,7 +8,7 @@ Of all the SOLID principles, the Single Responsibility Principle (SRP) might be 
 
 Make no mistake, there is a principle like that. A function should do one, and only one, thing. We use that principle when we are refactoring large functions into smaller functions; we use it at the lowest levels. But it is not one of the SOLID principles—it is not the SRP.
 
-> 没错，后者的确也是一个设订原则，即确保一个函数只完成一个功能。我们在将大型函数亜构成小函数时经常会用到这个原则，但这只是一个面向底层实现细节的设计原则，并不是 SRP 的全部。
+> 确实有这样一条原则：一个函数应该只做一件事，而且只做一件事。我们在把大型函数重构成较小函数时会用到它，通常是在更底层的代码中。但它不属于 SOLID 原则，也不是 SRP。
 
 Historically, the SRP has been described this way:
 
@@ -44,11 +44,11 @@ Now, what do we mean by the word “module”? The simplest definition is just a
 
 That word “cohesive” implies the SRP. Cohesion is the force that binds together the code responsible to a single actor.
 
-> 在这里，“相关”这个词实际上就隐含了 SRP 这一原则。代码与数据就是靠着与某一类行为者的相关性被组合在一起的。
+> 这里的“内聚”一词体现了 SRP。内聚力就是把服务于同一个行为者的代码结合在一起的力量。
 
 Perhaps the best way to understand this principle is by looking at the symptoms of violating it.
 
-> 或许，理解这个设计原则最好的办法就是计大家来看一些反面案例。
+> 或许，理解这个设计原则最好的办法就是带大家来看一些反面案例。
 
 ## SYMPTOM 1: ACCIDENTAL DUPLICATION 反面案例 1：重复的假象
 
@@ -74,7 +74,7 @@ This class violates the SRP because those three methods are responsible to three
 
 By putting the source code for these three methods into a single Employee class, the developers have coupled each of these actors to the others. This coupling can cause the actions of the CFO’s team to affect something that the COO’s team depends on.
 
-> 这三个函数被放在同一个源代码文件，即同一个 Employee 类中，程序员这样 做实际上就等于使三类行为者的行为耦合在了一起，这有可能会导致 CFO 团队的命令影响到 C 00 团队所依赖的功能。
+> 这三个函数被放在同一个源代码文件，也就是同一个 Employee 类中，实际上会让三类行为者彼此耦合。这种耦合可能导致 CFO 团队的操作影响到 COO 团队所依赖的功能。
 
 For example, suppose that the calculatePay() function and the reportHours() function share a common algorithm for calculating non-overtime hours. Suppose also that the developers, who are careful not to duplicate code, put that algorithm into a function named regularHours() (Figure 7.2).
 
@@ -102,7 +102,7 @@ We’ve all seen things like this happen. These problems occur because we put co
 
 > 与此类似的事情我们肯定多多少少都经历过。这类问题发生的根源就是因为我们将不同行为者所依赖的代码强凑到了一起。对此，SRP 强调这类代码一定要被分开。
 
-## SYMPTOM 2: MERGES 反面案例 2：代码合井
+## SYMPTOM 2: MERGES 反面案例 2：代码合并
 
 It’s not hard to imagine that merges will be common in source files that contain many different methods. This situation is especially likely if those methods are responsible to different actors.
 
@@ -114,13 +114,15 @@ For example, suppose that the CTO’s team of DBAs decides that there should be 
 
 Two different developers, possibly from two different teams, check out the Employee class and begin to make changes. Unfortunately their changes collide. The result is a merge.
 
-> 这样一来，就很可能出现两个来自不同团队的程序员分别对 Employee 类进行 修改的情况。不出意外的话，他们各自的修改一定会互相冲突，这就必须要进行代码合并。
+> 这样一来，很可能会有两位来自不同团队的程序员分别修改 Employee 类。不幸的是，他们的改动会发生冲突，形成一次合并。
 
 I probably don’t need to tell you that merges are risky affairs. Our tools are pretty good nowadays, but no tool can deal with every merge case. In the end, there is always risk.
 
+> 合并操作往往有风险。如今我们的工具已经相当不错，但没有任何工具能处理所有合并情况。归根结底，风险始终存在。
+
 In our example, the merge puts both the CTO and the COO at risk. It’s not inconceivable that the CFO could be affected as well.
 
-> 在这个例子中，这次代码合并不仅有可能让 CTO 和 COO 要求的功能出错，甚至连 CFO 原本正常的功能也可能收到影响。
+> 在这个例子中，这次代码合并可能危及 CTO 和 COO 的团队，甚至也可能影响 CFO 的团队。
 
 There are many other symptoms that we could investigate, but they all involve multiple people changing the same source file for different reasons.
 

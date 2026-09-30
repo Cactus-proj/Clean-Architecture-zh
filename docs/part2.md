@@ -10,8 +10,8 @@ In 1938, Alan Turing laid the foundations of what was to become computer program
 
 Since those days, a number of revolutions in programming have occurred. One revolution with which we are all very familiar is the revolution of languages. First, in the late 1940s, came assemblers. These “languages” relieved the programmers of the drudgery of translating their programs into binary. In 1951, Grace Hopper invented A0, the first compiler. In fact, she coined the term compiler. Fortran was invented in 1953 (the year after I was born). What followed was an unceasing flood of new programming languages—COBOL, PL/1, SNOBOL, C, Pascal, C++, Java, ad infinitum.
 
-> 从那时到现在，编程领域历经了数次变革，其中我们都很熟悉的就是编程语言的变革。首先是在 20 世纪 40 年代末期出现了汇编器（assembler），它能自动将一段程序转化为相应的二进制数序列，大幅解放了程序员。然后是 1951 年，Grace Hopper 发明了 A0，这是世界上第一个编译器（compiler）。事实上，编译器这个名字就是他定义和推广使用的。再接着就到了 1953 年，那一年 FORTRAN 面世了（就在我出生的第二年）。接下来就是层出不穷的新编程语言了——COBOL、PL/1、SNOBOL、C、Pascal、C++、Java 等等，不胜枚举。
+> 从那时到现在，编程领域历经了数次变革，其中我们都很熟悉的一次就是编程语言的变革。首先，20 世纪 40 年代末出现了汇编器（assembler），让程序员不必再费力地把程序翻译成二进制。1951 年，Grace Hopper 发明了 A0，这是第一个编译器（compiler）；事实上，“编译器”一词也是她创造的。随后，FORTRAN 于 1953 年问世（也就是我出生的第二年）。此后，新编程语言层出不穷：COBOL、PL/1、SNOBOL、C、Pascal、C++、Java 等等，不胜枚举。
 
 Another, probably more significant, revolution was in programming paradigms. Paradigms are ways of programming, relatively unrelated to languages. A paradigm tells you which programming structures to use, and when to use them. To date, there have been three such paradigms. For reasons we shall discuss later, there are unlikely to be any others.
 
-> 除此之外，计算机编程领域还经历了另外一个更巨大、更重要的变革，那就果编程范式（paradigm）的变迁。编程范式指的是程序的编写模式，与具体的编程语言关系相对较小。这些范式会告诉你应该在什么时候采用什么样的代码结构。直到今天，我们也一共只有三个编程范式，而且未来几乎不可能再出现新的，接下来我们就看一下为什么。
+> 除此之外，计算机编程领域还经历了另一场更大、也许更重要的变革，那就是编程范式（paradigm）的变迁。编程范式指的是编程方式，与具体的编程语言关系相对较小。范式会告诉我们应该采用哪些编程结构，以及何时采用。到目前为止，这样的范式只有三个；接下来我们会解释为什么几乎不可能再出现新的范式。

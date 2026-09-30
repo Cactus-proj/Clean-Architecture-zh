@@ -65,8 +65,8 @@ Looking at the whole thing again, it’s best to start with the innermost functi
 
 > - range 函数会返回一个从 0 开始的整数无穷列表。
 > - 然后该列表会被传入 map 函数，并针对列表中的每个元素，调用求平方值的匿名函数，产生了一个无穷多的、包含平方值的列表。
-> - 接着再将这个列表传入 take 函数，后者会返回一个仅包含前 25 个元素的 新列表。
-> - println 函数将它的参数输出，该参数就是上面这个包含了 25 个平方值的 列表。
+> - 接着再将这个列表传入 take 函数，后者会返回一个仅包含前 25 个元素的新列表。
+> - println 函数将它的参数输出，该参数就是上面这个包含了 25 个平方值的列表。
 
 If you find yourself terrified by the concept of never-ending lists, don’t worry. Only the first 25 elements of those never-ending lists are actually created. That’s because no element of a never-ending list is evaluated until it is accessed.
 
@@ -120,7 +120,7 @@ Since mutating state exposes those components to all the problems of concurrency
 
 Transactional memory simply treats variables in memory the same way a database treats records on disk.1 It protects those variables with a transaction- or retry-based scheme.
 
-> 事务型内存基本上与数据库保护磁盘数据的方式 1 类似，通常釆用的是事务或者重试机制。
+> 事务型内存基本上与数据库保护磁盘数据的方式 1 类似，通常采用的是事务或者重试机制。
 
 A simple example of this approach is Clojure’s atom facility:
 
@@ -182,6 +182,8 @@ This is the idea behind event sourcing.2 Event sourcing is a strategy wherein we
 > 这就是事件溯源，在这种体系下，我们只存储事务记录，不存储具体状态。当需要具体状态时，我们只要从头开始计算所有的事务即可。
 
 Of course, we can take shortcuts. For example, we can compute and save the state every midnight. Then, when the state information is required, we need compute only the transactions since midnight.
+
+> 当然，我们可以采用捷径。例如，每天午夜计算并保存一次状态。之后需要状态信息时，只需计算午夜以来发生的事务。
 
 Now consider the data storage required for this scheme: We would need a lot of it. Realistically, offline data storage has been growing so fast that we now consider trillions of bytes to be small—so we have a lot of it.
 

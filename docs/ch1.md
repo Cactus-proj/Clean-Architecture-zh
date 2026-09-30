@@ -16,7 +16,7 @@ The word “architecture” is often used in the context of something at a high 
 
 Consider the architect who designed my new home. Does this home have an architecture? Of course it does. And what is that architecture? Well, it is the shape of the home, the outward appearance, the elevations, and the layout of the spaces and rooms. But as I look through the diagrams that my architect produced, I see an immense number of low-level details. I see where every outlet, light switch, and light will be placed. I see which switches control which lights. I see where the furnace is placed, and the size and placement of the water heater and the sump pump. I see detailed depictions of how the walls, roofs, and foundations will be constructed.
 
-> 以给我设计新房子的建筑设计师要做的事情为例。新房子当然是存在着既定架构的，但这个架构具体包含哪些内容呢？首先，它应该包括房屋的形状、外观设计、垂直高度、房间的布局，等等。但是，如果查看建筑设计师使用的图纸，会发现其中也充斥着大量的设计细节。譬如，我们可以看到每个插座、开关以及每个电灯具体的安装位置，同时也可以看到某个开关与所控制的电灯的具体连接信息；我们也能看到壁炉的具体安装位置，热水器的大小和位置信息，甚至是污水泵的位置；同时也可以看到关于墙体、屋顶和地基都有非常详细的建造说明。
+> 以为我设计新房子的建筑师为例。新房子当然有自己的架构，但这个架构具体包含哪些内容呢？它包括房屋的形状、外观、各个立面，以及空间和房间的布局，等等。然而，查看建筑师绘制的图纸，还会发现大量底层细节：每个插座、开关和电灯的安装位置，哪些开关控制哪些灯，供暖炉的位置，以及热水器和污水泵的尺寸与位置；墙体、屋顶和地基的建造方式也都描绘得十分详细。
 
 In short, I see all the little details that support all the high-level decisions. I also see that those low-level details and high-level decisions are part of the whole design of the house.
 
@@ -74,7 +74,7 @@ These trends aren’t sustainable. It doesn’t matter how profitable the compan
 
 What caused this remarkable change in productivity? Why was the code 40 times more expensive to produce in release 8 as opposed to release 1?
 
-> 究竟是什么因素造成生产力的大幅变化呢？为什么第 8 代产品的构建成本要 比第 1 代产品高 40 倍？
+> 究竟是什么因素造成生产力的大幅变化呢？为什么第 8 代产品的构建成本要比第 1 代产品高 40 倍？
 
 <Figures figure="1-3">Cost per line of code over time</Figures>
 
@@ -152,7 +152,7 @@ These developers buy into a familiar lie: “We can clean it up later; we just h
 
 And so the developers never switch modes. They can’t go back and clean things up because they’ve got to get the next feature done, and the next, and the next, and the next. And so the mess builds, and productivity continues its asymptotic approach toward zero.
 
-> 所以，重构的时机永远不会再有了。工程师们忙于完成新功能，新功能做不完，哪有时间重构老的代码？循环往复，系统成了一团乱麻，主产效率持续直线下降，直至为零。
+> 所以，重构的时机永远不会再有了。工程师们忙于完成新功能，新功能做不完，哪有时间重构旧代码？循环往复，系统成了一团乱麻，生产效率持续下降，最终趋近于零。
 
 Just as the Hare was overconfident in its speed, so the developers are overconfident in their ability to remain productive. But the creeping mess of code that saps their productivity never sleeps and never relents. If given its way, it will reduce productivity to zero in a matter of months.
 
@@ -164,7 +164,7 @@ The bigger lie that developers buy into is the notion that writing messy code ma
 
 Consider the results of a remarkable experiment performed by Jason Gorman depicted in Figure 1.6. Jason conducted this test over a period of six days. Each day he completed a simple program to convert integers into Roman numerals. He knew his work was complete when his predefined set of acceptance tests passed. Each day the task took a little less than 30 minutes. Jason used a well-known cleanliness discipline named test-driven development (TDD) on the first, third, and fifth days. On the other three days, he wrote the code without that discipline.
 
-> 图 1.6 展示的是 Jason Gorman 进行的一次为期 6 天的实验。在该实验中，Jaosn 每天都编写一段代码，功能是将一个整数转化为相应罗马数字的字符串。当事先定义好的一个测试集完全通过时，即认为当天工作完成。每天实验的时长不超过 30 分钟。第一天、第三天和第五天，Jason 在编写代码的过程中采用了业界知名的优质代码方法论：测试驱动开发（TDD），而其他三天他则直接从头开始编写代码。
+> 图 1.6 展示的是 Jason Gorman 进行的一次为期 6 天的实验。在该实验中，Jason 每天都编写一段将整数转换为罗马数字的程序。当预先定义的验收测试全部通过时，当天的工作就算完成。每天的任务用时都略少于 30 分钟。第一天、第三天和第五天，Jason 采用了测试驱动开发（TDD）；另外三天则没有采用这种方法。
 
 <Figures figure="1-6">Time to completion by iterations and use/non-use of TDD</Figures>
 

@@ -10,7 +10,7 @@ The three paradigms included in this overview chapter are structured programming
 
 The first paradigm to be adopted (but not the first to be invented) was structured programming, which was discovered by Edsger Wybe Dijkstra in 1968. Dijkstra showed that the use of unrestrained jumps (goto statements) is harmful to program structure. As we’ll see in the chapters that follow, he replaced those jumps with the more familiar if/then/else and do/while/until constructs.
 
-> 结构化编程是第一个普遍被采用的编程范式（但是却不是第一个被提出的），由 Edsger Wybe Dijkstra 于 1968 年最先提出。与此同时，Dijkstra 还论证了使用 goto 这样的无限制跳转语句将会损害程序的整体结构。接下来的章节我们还会说到，二是这位 Dijkstra 最先主张用我们现在熟知的 if/then/else 语句和 do/while/until 语句来代替跳转语句的。
+> 结构化编程是第一个普遍被采用的编程范式（但不是第一个被发明的），由 Edsger Wybe Dijkstra 于 1968 年提出。Dijkstra 还论证了使用 goto 这样的无限制跳转语句会损害程序结构。正如后续章节将要介绍的，他主张用我们现在熟悉的 if/then/else 和 do/while/until 结构来代替这些跳转。
 
 We can summarize the structured programming paradigm as follows:
 
@@ -24,7 +24,7 @@ Structured programming imposes discipline on direct transfer of control.
 
 The second paradigm to be adopted was actually discovered two years earlier, in 1966, by Ole Johan Dahl and Kristen Nygaard. These two programmers noticed that the function call stack frame in the ALGOL language could be moved to a heap, thereby allowing local variables declared by a function to exist long after the function returned. The function became a constructor for a class, the local variables became instance variables, and the nested functions became methods. This led inevitably to the discovery of polymorphism through the disciplined use of function pointers.
 
-> 说到编程领域中第二个被广泛采用的编程范式，当然就是面向对象编程了：事实上，这个编程范式的提出比结构化编程还早了两年，是在 1966 年由 Ole Johan Dahl 和 Kriste Nygaard 在论文中总结归纳出来的。这两个程序员注意到在 ALGOL 语言中. 函数调用堆栈（call stack frame）可以被挪到堆内存区域里，这样函数定义的本地变量就可以在函数返回之后继续存在。这个函数就成为了一个类（class）的构造函数，而它所定义的本地变量就是类的成员变量，构造函数定义的嵌套函数就成为了成员方法（method）。这样一来，我们就可以利用多态（polymorphism）来限制用户对函数指针的使用。
+> 第二个被广泛采用的编程范式是面向对象编程。事实上，它比结构化编程早两年出现：1966 年，Ole Johan Dahl 和 Kristen Nygaard 注意到，ALGOL 语言中的函数调用栈帧可以移到堆上，使函数声明的局部变量在函数返回后继续存在。函数由此成为类的构造函数，局部变量成为实例变量，嵌套函数则成为方法。通过有纪律地使用函数指针，这一思路最终引出了多态。
 
 We can summarize the object-oriented programming paradigm as follows:
 
@@ -38,7 +38,7 @@ Object-oriented programming imposes discipline on indirect transfer of control.
 
 The third paradigm, which has only recently begun to be adopted, was the first to be invented. Indeed, its invention predates computer programming itself. Functional programming is the direct result of the work of Alonzo Church, who in 1936 invented l-calculus while pursuing the same mathematical problem that was motivating Alan Turing at the same time. His l-calculus is the foundation of the LISP language, invented in 1958 by John McCarthy. A foundational notion of l-calculus is immutability—that is, the notion that the values of symbols do not change. This effectively means that a functional language has no assignment statement. Most functional languages do, in fact, have some means to alter the value of a variable, but only under very strict discipline.
 
-> 尽管第三个编程范式是近些年才刚刚开始被采用的，但它其实是三个范式中最先被发明的。事实上，函数式编程概念是基于与阿兰·图灵同时代的数学家 Alonzo Church 在 1936 年发明的入演算的直接衍生物。1958 年 John Mccarthy 利用其作为基础发明了 LISP 语言。众所周知，λ 演算法的一个核心思想是不可变性——某个符号所对应的值是永远不变的，所以从理论上来说，函数式编程语言中应该是没有赋值语句的。大部分函数式编程语言只允许在非常严格的限制条件下，才可以更改某个变量的值。
+> 尽管第三个编程范式近些年才开始被广泛采用，却是三个范式中最早发明的。事实上，函数式编程直接源于数学家 Alonzo Church 的工作：他在 1936 年研究与 Alan Turing 同时期关注的数学问题时发明了 λ 演算。John McCarthy 于 1958 年以此为基础发明了 LISP 语言。λ 演算的一个核心概念是不可变性，也就是符号的值不会改变。这意味着函数式语言没有赋值语句。实际上，大多数函数式语言都允许在严格约束下改变变量的值。
 
 We can summarize the functional programming paradigm as follows:
 
@@ -66,7 +66,7 @@ Probably not. Thus these three paradigms are likely to be the only three we will
 
 What does this history lesson on paradigms have to do with architecture? Everything. We use polymorphism as the mechanism to cross architectural boundaries; we use functional programming to impose discipline on the location of and access to data; and we use structured programming as the algorithmic foundation of our modules.
 
-> 大家可能会问，这些编程范式的历史知识与软件架构有关系吗？当然有，而目关系相当密切。譬如说，多态是我们跨越架构边界的手段，函数式编程是我们规范和限制数据存放位置与访问权限的手段，结构化编程则是各模块的算法实现基础。
+> 大家可能会问，这些编程范式的历史与软件架构有关系吗？当然有，而且关系密切：多态是我们跨越架构边界的手段，函数式编程帮助我们约束数据的存放位置和访问方式，结构化编程则是各模块的算法基础。
 
 Notice how well those three align with the three big concerns of architecture: function, separation of components, and data management.
 
