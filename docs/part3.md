@@ -8,7 +8,7 @@ Good software systems begin with clean code. On the one hand, if the bricks aren
 
 The SOLID principles tell us how to arrange our functions and data structures into classes, and how those classes should be interconnected. The use of the word “class” does not imply that these principles are applicable only to object-oriented software. A class is simply a coupled grouping of functions and data. Every software system has such groupings, whether they are called classes or not. The SOLID principles apply to those groupings.
 
-> SOLID 原则的主要作用就是告诉我们如何将数据和函数组织成为类，以及如将这些类链接起来成为程序。请注意，这里虽然用到了 “类”这个词，但是并不意味着我们将要讨论的这些设计原则仅仅适用于面向对象编程。这里的类仅仅代表一种数据和函数的分组，每个软件系统都会有自己的分类系统，不管它们各自是不是将其称为“类”，事实上都是 SOLID 原则的适用领域。
+> SOLID 原则主要告诉我们如何将数据和函数组织成类，以及如何将这些类彼此关联起来。请注意，这里虽然用到了“类”这个词，但并不意味着这些设计原则仅适用于面向对象软件。这里的类只是函数和数据的组合；每个软件系统都有这样的组合，不管是否称之为“类”，SOLID 原则都适用于它们。
 
 The goal of the principles is the creation of mid-level software structures that:
 

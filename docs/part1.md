@@ -22,7 +22,7 @@ Yes, this vision sounds a bit utopian. But I’ve been there; I’ve seen it hap
 
 But don’t take my word for it. Look at your own experience. Have you experienced the opposite? Have you worked on systems that are so interconnected and intricately coupled that every change, regardless of how trivial, takes weeks and involves huge risks? Have you experienced the impedance of bad code and rotten design? Has the design of the systems you’ve worked on had a huge negative effect on the morale of the team, the trust of the customers, and the patience of the managers? Have you seen teams, departments, and even companies that have been brought down by the rotten structure of their software? Have you been to programming hell?
 
-> 请读者回头想想自己的亲身经历，你肯定经历过这样的情境：某个系统因为其组件错综复杂，相互耦合紧密，而导致不管多么小的改动都需要数周的恶战才能完成。又或是某个系统中到处充满了腐朽的设计和连篇累牍的恶心代码，处处都是障碍。再或者，你有没有见过哪个系统的设计如此之差，让整个团队的士气低落，客户天天痛苦，项目经理们手足无措？你有没有见过某个软件系统因其架构腐朽不堪.而导致团队流失，部门解散，甚至公司倒闭？作为一名程序员，你在编程时体会过那种生不如死的感觉吗?
+> 请读者回想自己的经历：你是否遇到过组件彼此紧密耦合、错综复杂的系统，以至于任何改动，无论多小，都要花数周时间，还伴随着巨大风险？你是否受过糟糕代码和腐朽设计的困扰？你是否见过系统设计严重打击团队士气、损害客户信任、耗尽管理者耐心？你是否见过团队、部门，甚至公司因软件结构腐朽而垮掉？作为一名程序员，你是否经历过编程地狱？
 
 I have—and to some extent, most of the rest of us have, too. It is far more common to fight your way through terrible software designs than it is to enjoy the pleasure of working with a good one.
 
