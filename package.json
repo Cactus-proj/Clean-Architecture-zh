@@ -2,7 +2,7 @@
   "devDependencies": {
     "markdownlint": "^0.41.1",
     "markdownlint-cli": "^0.50.0",
-    "vitepress": "^2.0.0-alpha.15"
+    "vitepress": "^2.0.0-alpha.21"
   },
   "scripts": {
     "docs:dev": "vitepress dev docs --open --host 127.0.0.1",
